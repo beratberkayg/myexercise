@@ -1,4 +1,5 @@
 "use client";
+
 import { kullanıcıEkle } from "../redux/DataSlice";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 import { useState } from "react";
@@ -22,6 +23,7 @@ const Modal = ({ closeFunc }: ModalProps) => {
 
   const addUser = () => {
     dispatch(kullanıcıEkle({ ...user }));
+    setUser({ isim: "", soyisim: "" });
   };
 
   console.log(user);
@@ -49,6 +51,7 @@ const Modal = ({ closeFunc }: ModalProps) => {
           id="soyisim"
         />
       </div>
+
       <button onClick={addUser} className="border mt-5">
         kullanıcı ekle
       </button>

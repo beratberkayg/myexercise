@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import ReduxProvider from "./redux/provider/ReduxProviders";
 import Cursor from "@/components/cursor/Cursor";
+import Navbar from "@/components/navbar/Navbar";
+import Loader from "@/components/Loader/Loader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} w-full min-h-screen flex black `}>
         <ReduxProvider>
           <Cursor />
-          <main>{children}</main>
+          <Navbar />
+          <main className="flex-grow">{children}</main>
         </ReduxProvider>
       </body>
     </html>

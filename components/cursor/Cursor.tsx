@@ -19,6 +19,7 @@ const Cursor = () => {
         top: cursorY + "px",
       }}
       id="cursor"
+      className="hidden lg:block "
     ></div>
   );
 };

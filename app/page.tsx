@@ -1,14 +1,8 @@
-import Link from "next/link";
 import React from "react";
+import LoginPage from "@/pages/LoginPage";
 
 const Home = () => {
-  return (
-    <li>
-      <a href="/" className="text-5xl text-center w-full h-full">
-        Home
-      </a>
-    </li>
-  );
+  return <LoginPage />;
 };
 
 export default Home;

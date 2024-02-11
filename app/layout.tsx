@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
-import ReduxProvider from "./redux/provider/ReduxProviders";
+import ReduxProvider from "@/redux/provider/ReduxProviders";
 import Cursor from "@/components/cursor/Cursor";
 import Navbar from "@/components/navbar/Navbar";
 import Loader from "@/components/Loader/Loader";

@@ -1,22 +1,20 @@
 "use client";
 
 import Loader from "@/components/Loader/Loader";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const LoginPage = () => {
+const Page = () => {
   const [pageLoading, setPageLoading] = useState<boolean>(true);
-
+  const router = useRouter();
   useEffect(() => {
     const timer = setTimeout(() => {
       setPageLoading(false);
+      router.push("/home");
     }, 3000);
     return () => clearTimeout(timer);
   }, [pageLoading]);
-  return (
-    <div className="w-full h-full">
-      <div>Home PAge</div>
-    </div>
-  );
+  return <div className="">{pageLoading && <Loader />}</div>;
 };
 
-export default LoginPage;
+export default Page;

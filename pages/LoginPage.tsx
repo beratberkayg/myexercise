@@ -14,7 +14,11 @@ const Page = () => {
     }, 3000);
     return () => clearTimeout(timer);
   }, [pageLoading]);
-  return <div className="">{pageLoading && <Loader />}</div>;
+  return (
+    <div className="w-full h-screen bg-black absolute left-0 top-0">
+      {pageLoading && <Loader />}
+    </div>
+  );
 };
 
 export default Page;

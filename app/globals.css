@@ -8,8 +8,13 @@ body,
   cursor: none;
 }
 
-body {
-  mix-blend-mode: difference;
+/* For Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the thumb */
 }
 
 .black {
@@ -85,5 +90,4 @@ body {
   pointer-events: none;
   transform: translate(-50%, -50%);
   mix-blend-mode: difference;
-  transition: 100ms;
 }

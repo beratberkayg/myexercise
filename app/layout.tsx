@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} w-full min-h-[1000px] flex black font-light `}
+        className={`${inter.className} w-full min-h-[1000px] flex white font-light `}
       >
         <ReduxProvider>
           <Cursor />

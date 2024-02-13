@@ -7,8 +7,8 @@ const Cursor = () => {
 
   useEffect(() => {
     window.addEventListener("mousemove", (e) => {
-      setCursorX(e.pageX);
-      setCursorY(e.pageY);
+      setCursorX(e.clientX);
+      setCursorY(e.clientY);
     });
   }, [cursorX, cursorY]);
 
@@ -19,7 +19,7 @@ const Cursor = () => {
         top: cursorY + "px",
       }}
       id="cursor"
-      className=" lg:block z-10 "
+      className="z-10 lg:block"
     ></div>
   );
 };

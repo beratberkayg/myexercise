@@ -8,17 +8,7 @@ body,
   cursor: none;
 }
 
-/* For Chrome, Safari, and Opera */
-::-webkit-scrollbar {
-  width: 5px; /* Width of the scrollbar */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #888; /* Color of the thumb */
-}
-
 .black {
-  background: black;
   color: white;
   --color: rgba(114, 114, 114, 0.3);
   background-color: #191a1a;
@@ -50,7 +40,6 @@ body,
 }
 
 .white {
-  background: white;
   color: black;
   --color: #e1e1e1;
   background-color: #f3f3f3;
@@ -83,9 +72,9 @@ body,
 
 #cursor {
   position: fixed;
-  width: 30px;
-  height: 30px;
-  background: white;
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);

@@ -21,12 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} w-full min-h-[1000px] flex white font-light `}
+        className={`${inter.className} w-full min-h-[1000px] flex flex-col black font-light `}
       >
         <ReduxProvider>
           <Cursor />
           <Navbar />
-          <main className="flex-grow mt-[90px]">{children}</main>
+          <main className="flex-grow ">{children}</main>
         </ReduxProvider>
       </body>
     </html>
